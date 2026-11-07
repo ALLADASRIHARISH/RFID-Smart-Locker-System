@@ -17,7 +17,7 @@ char correct_pass[] = "1234";   //password
 int main(){
     unsigned char i, ch,j;
     unsigned int key, attempts;
-	 IODIR0|=(1<<3)|(1<<4);	//P1.16 AL LED 
+	 IODIR0|=(1<<3)|(1<<4);	//p0.3 as AL LED and p0.4 as BUZZER 
 	 IODIR0|=(1<<22)|(1<<21);  //P0.20 AND P0.21 DC MOTOR ON
 	 IOSET0=(1<<3);//led off 
 	IOSET0 = (1<<4); //AL BUZZER OFF
